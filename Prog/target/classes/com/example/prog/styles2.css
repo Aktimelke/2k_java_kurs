@@ -1,0 +1,34 @@
+.cancel-button {
+    -fx-background-color: #FF0000;
+    -fx-text-fill: #FFFFFF;
+}
+
+.add-button {
+    -fx-background-color: grey;
+    -fx-text-fill: #FFFFFF;
+}
+
+.limited-text-field {
+    -fx-pref-height: 25px;
+    -fx-pref-width: 115px;
+    -fx-border-color: #000000;
+    -fx-border-radius: 5px;
+}
+
+.plus-minus-label {
+    -fx-font-size: 20px;
+}
+
+.sign-button {
+    -fx-background-color: #0000FF;
+    -fx-text-fill: #FFFFFF;
+}
+
+.label {
+    -fx-font-size: 15px;
+}
+
+.in-value-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #FF0000;
+}

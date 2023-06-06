@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Main-Class: com.example.prog.App
+Class-Path: javafx-controls-19-ea+7-win.jar javafx-controls-19-ea+7.jar 
+ javafx-base-19-ea+7-win.jar javafx-fxml-19-ea+7.jar javafx-fxml-19-ea+7
+ -win.jar checker-qual-3.5.0.jar javafx-graphics-19-ea+7.jar javafx-grap
+ hics-19-ea+7-win.jar javafx-base-19-ea+7.jar javafx-swt.jar javafx.web.
+ jar javafx.base.jar javafx.fxml.jar javafx.media.jar javafx.swing.jar j
+ avafx.controls.jar javafx.graphics.jar postgresql-42.5.2.jar
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="705.0" stylesheets="@styles1.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prog.MainWindow">
+   <top>
+      <AnchorPane prefHeight="77.0" prefWidth="600.0" styleClass="top-pane" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="AddNew" layoutX="621.0" layoutY="48.0" mnemonicParsing="false" onAction="#AddNewNote" prefHeight="25.0" prefWidth="70.0" styleClass="top-button" text=" Add new" />
+            <TextArea editable="false" layoutX="14.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="246.0" styleClass="top-textarea">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextArea>
+            <TextArea editable="false" layoutX="370.0" layoutY="21.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="177.0" styleClass="top-textarea">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextArea>
+            <Label fx:id="Time" layoutX="376.0" layoutY="27.0" prefHeight="25.0" prefWidth="164.0" styleClass="top-label">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="User" layoutX="22.0" layoutY="26.0" styleClass="top-label">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="561.0" layoutY="48.0" mnemonicParsing="false" onAction="#deleteData" styleClass="top-button" text="Delete" />
+            <Button layoutX="561.0" layoutY="14.0" mnemonicParsing="false" onAction="#moveToGraph" prefHeight="25.0" prefWidth="130.0" styleClass="top-button" text="Make graphic" />
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="393.0" prefWidth="112.0" styleClass="left-pane" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="MenuButt" layoutX="6.0" layoutY="330.0" mnemonicParsing="false" onAction="#OpenMenu" prefHeight="49.0" prefWidth="100.0" styleClass="left-button" text="Log out">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="Stat" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onAction="#OpenStat" prefHeight="49.0" prefWidth="100.0" styleClass="left-button" text="Statistics">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="393.0" prefWidth="668.0" styleClass="center-pane" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="table" layoutX="35.0" layoutY="44.0" prefHeight="385.0" prefWidth="586.0" styleClass="table-view" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="9.0">
+               <columns>
+                  <TableColumn fx:id="TimeColumn" prefWidth="151.0" text="Time" />
+                  <TableColumn fx:id="OperationColumn" onEditStart="#EditMsg" prefWidth="141.0" text="Operation" />
+                  <TableColumn fx:id="NotesColumn" minWidth="0.0" prefWidth="292.0" text="Notes" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

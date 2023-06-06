@@ -1,0 +1,9 @@
+.main-pane {
+    -fx-background-color: #f2f2f2;
+}
+
+.chart-pie {
+    -fx-border-color: #ccc;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}

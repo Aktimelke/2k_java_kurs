@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="771.0" stylesheets="@styles4.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prog.StatController">
+   <top>
+      <AnchorPane prefHeight="49.0" prefWidth="771.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="12.0" styleClass="title-label" text="Statistics">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Separator layoutY="54.0" prefHeight="4.0" prefWidth="771.0" />
+            <DatePicker fx:id="DayPicker" layoutX="219.0" layoutY="17.0" />
+            <Button fx:id="ChooseDay" layoutX="127.0" layoutY="15.0" mnemonicParsing="false" onAction="#SwitchToDay" styleClass="action-button" text="Choose day" />
+            <Button layoutX="682.0" layoutY="17.0" mnemonicParsing="false" onAction="#OpenIncomeChart" prefHeight="25.0" prefWidth="75.0" styleClass="action-button" text="Spends" />
+            <Button layoutX="600.0" layoutY="17.0" mnemonicParsing="false" onAction="#OpenSpendingChart" prefHeight="25.0" prefWidth="75.0" styleClass="action-button" text="Incomes" />
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="456.0" prefWidth="0.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="Back" layoutX="61.0" layoutY="406.0" mnemonicParsing="false" onAction="#BackToMainWindow" prefHeight="36.0" prefWidth="59.0" styleClass="back-button" text="Back" />
+            <Label layoutX="20.0" layoutY="6.0" />
+            <VBox layoutX="8.0" layoutY="27.0" prefHeight="182.0" prefWidth="173.0">
+               <children>
+                  <GridPane prefHeight="182.0" prefWidth="182.0" styleClass="statistics-grid-pane">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="91.0" minWidth="10.0" prefWidth="77.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="116.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label styleClass="statistics-label" text="Income">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="statistics-label" text="Spend" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="statistics-label" text="Profit" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="income" styleClass="statistics-value" text="Label" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="spending" styleClass="statistics-value" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="profit" styleClass="statistics-value" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <Separator layoutX="175.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="458.0" prefWidth="5.0" />
+            <Label fx:id="StatisticLabel" layoutX="6.0" layoutY="1.0" styleClass="section-label" text="Todays statistics">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="centerAnchorPane" prefHeight="456.0" prefWidth="624.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="table" prefHeight="450.0" prefWidth="585.0">
+               <columns>
+                  <TableColumn fx:id="timeColumn" prefWidth="151.0" styleClass="table-column" text="Time" />
+                  <TableColumn fx:id="PlanColumn" prefWidth="433.0" styleClass="table-column" text="Plan" />
+               </columns>
+            </TableView>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

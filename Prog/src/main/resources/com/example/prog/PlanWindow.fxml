@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prog.PlanWindowController">
+    <BorderPane styleClass="main-border-pane">
+        <center>
+            <GridPane fx:id="calendarGridPane" styleClass="calendar-grid-pane">
+                <!-- Кнопки дней месяца будут добавлены программно -->
+            </GridPane>
+        </center>
+        <right>
+            <VBox alignment="TOP_CENTER" spacing="10" styleClass="right-vbox">
+                <ComboBox fx:id="monthComboBox" />
+                <Button onAction="#close" text="Back" styleClass="back-button" />
+            </VBox>
+        </right>
+    </BorderPane>
+</AnchorPane>

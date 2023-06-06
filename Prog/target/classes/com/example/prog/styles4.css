@@ -1,0 +1,36 @@
+.title-label {
+    -fx-text-fill: #333333;
+}
+
+.action-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.back-button {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.statistics-grid-pane {
+    -fx-background-color: #f2f2f2;
+    -fx-padding: 10px;
+}
+
+.statistics-label {
+    -fx-text-fill: #333333;
+}
+
+.statistics-value {
+    -fx-text-fill: #666666;
+}
+
+.section-label {
+    -fx-text-fill: #333333;
+}
+
+.table-column {
+    -fx-text-fill: #333333;
+}

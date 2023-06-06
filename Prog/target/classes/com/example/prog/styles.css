@@ -1,0 +1,32 @@
+.main-border-pane {
+    -fx-padding: 10px;
+    -fx-background-color: #f0f0f0;
+}
+
+.calendar-grid-pane {
+    -fx-hgap: 5px;
+    -fx-vgap: 5px;
+}
+
+.calendar-day-button {
+    -fx-pref-width: 60px;
+    -fx-pref-height: 60px;
+    -fx-font-size: 14px;
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: black;
+}
+
+.calendar-day-button:hover {
+    -fx-background-color: #e0e0e0;
+}
+
+.calendar-day-button:pressed {
+    -fx-background-color: #d5d5d5;
+}
+
+
+
+.back-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: #ffffff;
+}

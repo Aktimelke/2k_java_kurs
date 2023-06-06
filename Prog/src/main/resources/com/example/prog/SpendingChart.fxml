@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="centerAnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles3.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prog.SpendingChartController">
+
+   <PieChart fx:id="SpendingChart" layoutX="42.0" layoutY="14.0" prefHeight="405.0" prefWidth="506.0" />
+</AnchorPane>
